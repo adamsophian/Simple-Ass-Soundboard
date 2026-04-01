@@ -1,6 +1,7 @@
 import os
 from playsound3 import playsound
-sounds=os.listdir(r".\Sounds")
+soundDir=f"{os.path.abspath(os.path.dirname(__file__))}\\Sounds"
+sounds=os.listdir(soundDir)
 
 def soundList(): # function to print lists of sounds detected in "".\Sounds"
     listNum=(0)
@@ -16,6 +17,7 @@ for file in sounds:
         if file.endswith(".mp3"):
             list.append(file)
 
+os.system('cls' if os.name == 'nt' else 'clear')
 while True: # the main code
     soundTotal=soundList()
     print("Play sound 1 -", soundTotal, "(0 to quit):")
@@ -30,5 +32,5 @@ while True: # the main code
         os.system('cls' if os.name == 'nt' else 'clear')
         soundOption=list[option-1]
         print("Playing ",soundOption)
-        playsound(f".\\Sounds\\{soundOption}")
+        playsound(f"{soundDir}\\{soundOption}")
         os.system('cls' if os.name == 'nt' else 'clear')
