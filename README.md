@@ -8,12 +8,16 @@ This program is intented to be used alongside a virtual audio cable to route the
 - Play audio files through your speaker
 
 ## Installation
+You can either download and run the .exe file from [releases](https://github.com/adamsophian/Simple-Ass-Soundboard/releases/) or run it manually through Python
+
+### Running it through Python
 1. Download and install [Python](https://www.python.org/downloads/)
 
-2. Install [playsound3](https://github.com/szmikler/playsound3) via pip
+2. Install [playsound3](https://github.com/szmikler/playsound3) and [readchar](https://github.com/magmax/python-readchar) via pip
 
     ```bash
    pip install playsound3
+    pip install readchar
    ```
 
 3. Download the [source code](https://github.com/adamsophian/Simple-Ass-Soundboard/archive/refs/heads/main.zip) and run **main.py**
