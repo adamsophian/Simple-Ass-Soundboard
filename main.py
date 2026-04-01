@@ -7,14 +7,14 @@ def soundList(): # function to print lists of sounds detected in "".\Sounds"
     listNum=(0)
     print("Available sounds:")
     for file in sounds:
-        if file.endswith(".mp3"):
+        if file.endswith(".mp3") or file.endswith(".wav"):
             listNum=(listNum+1)
             print(listNum, ":", file)
     return listNum 
 
 list=[]
 for file in sounds:
-        if file.endswith(".mp3"):
+        if file.endswith(".mp3") or file.endswith(".wav"):
             list.append(file)
 
 os.system('cls' if os.name == 'nt' else 'clear')
